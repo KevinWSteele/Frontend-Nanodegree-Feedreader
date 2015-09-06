@@ -41,7 +41,7 @@ $(function() {
         * in the allFeeds object and ensures each name is defined
         * and not empty.
         */
-        it ('name of allFeeds objects are defined and not empty', function(){
+        it ('Name of allFeeds objects are defined and not empty', function(){
             allFeeds.forEach(function(entry){
                 expect(entry.name).toBeDefined();
                 expect(entry.name).not.toBeNull();
@@ -64,11 +64,11 @@ $(function() {
         className = className;
 
         //Tests that the body has a "menu-hidden" class when the page has loaded for the first time.
-        it('menu element is hidden by default', function() {
+        it('Menu element is hidden by default', function() {
             expect(body.className).toBe('menu-hidden');
         });
 
-        it('menu changes visibly when the menu icon is clicked', function(){
+        it('Menu changes visibly when the menu icon is clicked', function(){
             //On first click, menu appears and the "menu-hidden" class is removed from the body element.
             $('a.menu-icon-link').trigger('click');
             //expect(bodyClass).toBeNull();//code
@@ -92,7 +92,7 @@ $(function() {
         });
 
         //Tests for four entry elements.
-        it('feed contains four entry elements', function(done){
+        it('Feed contains four entry elements', function(done){
             var entries = $('.feed .entry');
             expect(entries).toBeDefined();
             expect(entries.length).toEqual(4);
@@ -116,7 +116,7 @@ $(function() {
         });
 
         //Tests that a new feed is loaded and the content changes.
-        it('content of first two feeds change', function(done){
+        it('Content of first two feeds change', function(done){
             loadFeed(0, function(){
                 expect($('.feed').html()).not.toEqual(feed1);
                 done();
