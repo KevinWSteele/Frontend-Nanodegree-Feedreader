@@ -7,6 +7,10 @@ Click on the index.html page to open the site in your browser. You will see four
 
 Clicking any of these links will change the content of the displayed list of links in the main section of the index.html page to be from the corresponding clicked link. 
  
+Sources:
+https://stackoverflow.com/
+Udacity’s forums
+https://jasmine.github.io/2.1/introduction.html
 
 # Project Overview
 
