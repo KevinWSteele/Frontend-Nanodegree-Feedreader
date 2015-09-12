@@ -91,11 +91,11 @@ $(function() {
             loadFeed(0, done);
         });
 
-        //Tests for four entry elements.
-        it('Feed contains four entry elements', function(done){
+        //Tests for at least one entry elements.
+        it('Feed contains at least one entry element', function(done){
             var entries = $('.feed .entry');
             expect(entries).toBeDefined();
-            expect(entries.length).toEqual(4);
+            expect(entries.length).toBeGreaterThan(1);
             done();
         });
     });
